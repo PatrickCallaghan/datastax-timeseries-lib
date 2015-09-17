@@ -40,6 +40,6 @@ public class CandleStick {
 
 	@Override
 	public String toString() {
-		return "CandleStick for " + new DateTime(startTime).toString() + " [high=" + high + ", low=" + low + ", open=" + open + ", close=" + close + "]";
+		return "CandleStick for " + new DateTime(startTime).toString() + " [high=" + high + ", low=" + low + ", open=" + open + ", close=" + close + "]\n";
 	}
 }
