@@ -128,9 +128,11 @@ public class FunctionProcessor {
 	
 	public static List<Long> createDatesByPeriodicity(Periodicity periodicity, long startTime, TimeSeries timeSeries) {
 
-		long endTime = timeSeries.getDates()[timeSeries.getDates().length - 1];
-
 		List<Long> newDates = new ArrayList<Long>();
+		if (timeSeries.getDates().length == 0){
+			return newDates;
+		}
+		long endTime = timeSeries.getDates()[timeSeries.getDates().length - 1];		
 
 		// Only add if we have a valid value for the date.
 		if (startTime > timeSeries.getDates()[0]) {

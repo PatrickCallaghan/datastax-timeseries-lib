@@ -31,8 +31,6 @@ public class CandleStickProcessor {
 
 		DoubleArrayList doubles = new DoubleArrayList();
 
-		logger.info("candleStickTimePoints : " + candleStickTimePoints.toString());
-
 		for (int i = 0; i < oldDates.length; i++) {
 
 			long date = oldDates[i];
